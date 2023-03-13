@@ -2,7 +2,7 @@
 SubTable storage format
 
 ## About
-SubTable is a storage format built for the LambdaEngine for storage on-disk configuration files.
+SubTable is a storage format built for the FusionEngine for storage on-disk configuration files.
 This example parser dumps the output to XML
 
 ## Example file
