@@ -3,7 +3,6 @@ SubTable storage format
 
 ## About
 SubTable is a storage format built for the FusionEngine for storage on-disk configuration files.
-This example parser dumps the output to XML
 
 ## Example file
 ```
@@ -18,6 +17,9 @@ This example parser dumps the output to XML
   }
 }
 ```
+
+## Example with the C++ parser/API
+See the ```example.cpp``` file
 
 ## Characters
 
