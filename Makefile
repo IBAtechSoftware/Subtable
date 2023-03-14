@@ -1,4 +1,5 @@
 # SubTable make file
 
 build:
-	g++ subtable.cpp -lboost_serialization -o subtable
+	mkdir -p bin
+	g++ subtable.cpp -lboost_serialization -o bin/subtable
