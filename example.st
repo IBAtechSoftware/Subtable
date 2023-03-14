@@ -7,6 +7,7 @@
   @Users = [user1, user2]
   
   ?OtherTable {
-    @Port = 5959
+    @OtherValue = 5959
+    @OtherBool = false
   }
 }
