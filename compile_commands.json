@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/workspaces/SubTable/bin",
+  "command": "/usr/bin/c++   -I/workspaces/SubTable/include    -o CMakeFiles/subtable.dir/src/subtable.cpp.o -c /workspaces/SubTable/src/subtable.cpp",
+  "file": "/workspaces/SubTable/src/subtable.cpp"
+}
+]

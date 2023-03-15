@@ -33,10 +33,19 @@ public:
   std::vector<Table> m_subtables;
   std::map<std::string, std::string> m_values;
 
+  /**
+    Returns the value from the table as a string
+  */
   inline std::string getString(std::string key) { return m_values.at(key); }
 
+  /**
+    Returns the value from the table as a integer
+  */
   inline int getInt(std::string key) { return std::stoi(m_values.at(key)); }
 
+  /**
+    Returns the value from the table as a boolean
+  */
   inline bool getBoolean(std::string key) {
     std::string stringResult = m_values.at(key);
 
@@ -49,8 +58,9 @@ public:
     return b;
   }
 
-  // WARNING: Arrays are not parsed when the document is loaded, they are parsed
-  // when their value is requested
+  /**
+    Returns the value from the table as an array
+  */
   inline std::vector<std::string> getArray(std::string key) {
     std::string arrayString = m_values.at(key);
 
@@ -77,6 +87,9 @@ public:
     return result;
   }
 
+  /**
+    Returns a subtable with the given name
+  */
   inline Table getSubtable(std::string key) {
     for (auto table : m_subtables) {
       if (table.m_name == key) {
@@ -98,11 +111,16 @@ inline Table *queryForTable(std::vector<Table *> tables, std::string name) {
   throw std::runtime_error("Cannot find table");
 }
 
-// Main subtable parser class, for a single document
+/**
+  Represents a single subtable document
+*/
 class SubTable {
 public:
   SubTable();
 
+  /**
+    Load a subtable(.st) document from the given path
+  */
   void loadDocument(std::string filePath);
 
   inline Table getTable(std::string key) {
