@@ -1,4 +1,4 @@
-#include "subtable.hpp"
+#include <Subtable/subtable.hpp>
 #include <iostream>
 
 int main(){
