@@ -84,7 +84,7 @@ public:
       }
     }
 
-    throw std::runtime_error("Cannot find subtable");
+    throw std::runtime_error("Cannot find subtable: " + key);
   }
 };
 
