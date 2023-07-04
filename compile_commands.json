@@ -1,7 +1,53 @@
 [
-{
-  "directory": "/workspaces/SubTable/bin",
-  "command": "/usr/bin/c++   -I/workspaces/SubTable/include    -o CMakeFiles/subtable.dir/src/subtable.cpp.o -c /workspaces/SubTable/src/subtable.cpp",
-  "file": "/workspaces/SubTable/src/subtable.cpp"
-}
+    {
+        "directory": "/home/interfiber/repos/IBAtechSoftware/Subtable/build",
+        "arguments": [
+            "/nix/store/aafdki1nf49k5vxq6gx2yabiybk2bjmw-gcc-12.2.0/bin/g++",
+            "-fPIC",
+            "-Wformat",
+            "-Wformat-security",
+            "-Werror=format-security",
+            "-fstack-protector-strong",
+            "--param",
+            "ssp-buffer-size=4",
+            "-O2",
+            "-U_FORTIFY_SOURCE",
+            "-D_FORTIFY_SOURCE=2",
+            "-fno-strict-overflow",
+            "-I/home/interfiber/repos/IBAtechSoftware/Subtable/include",
+            "-MD",
+            "-MT",
+            "CMakeFiles/subtable.dir/src/subtable.cpp.o",
+            "-MF",
+            "CMakeFiles/subtable.dir/src/subtable.cpp.o.d",
+            "-o",
+            "CMakeFiles/subtable.dir/src/subtable.cpp.o",
+            "-c",
+            "/home/interfiber/repos/IBAtechSoftware/Subtable/src/subtable.cpp",
+            "-B/nix/store/1n2l5law9g3b77hcfyp50vrhhssbrj5g-glibc-2.37-8/lib/",
+            "-isystem",
+            "/nix/store/aafdki1nf49k5vxq6gx2yabiybk2bjmw-gcc-12.2.0/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/include",
+            "-idirafter",
+            "/nix/store/wb2dlc8kpvrn960vq7j7c8822pi43n48-glibc-2.37-8-dev/include",
+            "-idirafter",
+            "/nix/store/aafdki1nf49k5vxq6gx2yabiybk2bjmw-gcc-12.2.0/lib/gcc/x86_64-unknown-linux-gnu/12.2.0/include-fixed",
+            "-B/nix/store/aafdki1nf49k5vxq6gx2yabiybk2bjmw-gcc-12.2.0/lib/gcc/x86_64-unknown-linux-gnu/12.2.0",
+            "-B/nix/store/g012c53brxmb0if3lpmkjwmxk74hjflh-gcc-12.2.0-lib/lib",
+            "-B/nix/store/5z30rzhnyng6a70dxqppdv4sfzqjgy5l-gcc-wrapper-12.2.0/bin/",
+            "-frandom-seed=v6hhspc2hl",
+            "-isystem",
+            "/nix/store/mwnj6g4fcmvz7j1fz2jqvg4537zl7g8x-gdb-13.1/include",
+            "-isystem",
+            "/nix/store/mwnj6g4fcmvz7j1fz2jqvg4537zl7g8x-gdb-13.1/include",
+            "-isystem",
+            "/nix/store/aafdki1nf49k5vxq6gx2yabiybk2bjmw-gcc-12.2.0/include/c++/12.2.0",
+            "-isystem",
+            "/nix/store/aafdki1nf49k5vxq6gx2yabiybk2bjmw-gcc-12.2.0/include/c++/12.2.0/x86_64-unknown-linux-gnu",
+            "-isystem",
+            "/nix/store/aafdki1nf49k5vxq6gx2yabiybk2bjmw-gcc-12.2.0/include/c++/12.2.0",
+            "-isystem",
+            "/nix/store/aafdki1nf49k5vxq6gx2yabiybk2bjmw-gcc-12.2.0/include/c++/12.2.0/x86_64-unknown-linux-gnu"
+        ],
+        "file": "/home/interfiber/repos/IBAtechSoftware/Subtable/src/subtable.cpp"
+    }
 ]

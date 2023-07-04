@@ -1,0 +1,3 @@
+[submodule "vendor/compilecommands"]
+	path = vendor/compilecommands
+	url = https://github.com/danielbarter/mini_compile_commands

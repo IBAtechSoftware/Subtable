@@ -32,7 +32,6 @@ public:
   std::string m_name;
   std::vector<Table> m_subtables;
   std::map<std::string, std::string> m_values;
-
   /**
     Returns the value from the table as a string
   */
@@ -78,7 +77,7 @@ public:
     std::vector<std::string> values = split(arrayString, ",");
     std::vector<std::string> result;
 
-    for (auto val : values){
+    for (auto val : values) {
       ltrim(val);
 
       result.push_back(val);
@@ -134,4 +133,37 @@ private:
   std::vector<Table *> m_tables;
   Table *m_currentTable;
   int m_tableIndex = 0;
+};
+
+class WritableTable {
+public:
+  inline WritableTable(std::string name) { m_tableName = name; }
+
+  inline WritableTable *newTable(std::string name) {
+    m_subtables.push_back(WritableTable(name));
+
+    return &m_subtables.back();
+  }
+
+  inline WritableTable *setValue(std::string key, std::string value) {
+    m_values.insert({key, value});
+    return this;
+  }
+
+  std::string m_tableName;
+  std::map<std::string, std::string> m_values;
+  std::vector<WritableTable> m_subtables;
+};
+
+class SubTableWriter {
+public:
+  SubTableWriter(std::string filePath);
+
+  inline WritableTable *getRoot() { return m_root; }
+
+  void write();
+
+private:
+  std::string m_filePath;
+  WritableTable *m_root;
 };
