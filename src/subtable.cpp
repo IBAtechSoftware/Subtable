@@ -14,6 +14,7 @@ void SubTable::loadDocument(std::string filePath) {
   m_currentTable = m_tables.back();
 
   std::ifstream ifs(filePath);
+
   std::string line;
 
   while (std::getline(ifs, line)) {
@@ -74,6 +75,8 @@ void SubTable::loadDocument(std::string filePath) {
       m_currentTable = m_tables[m_tableIndex];
     }
   }
+
+  ifs.close();
 }
 
 SubTableWriter::SubTableWriter(std::string filePath){
