@@ -1,33 +1,9 @@
-# SubTable
-SubTable storage format
+# Subtable 2.0
+Advanced plain-text configuration language
 
-## About
-SubTable is a storage format built for the FusionEngine for storage on-disk configuration files.
-
-## Example file
-```
-# SubTable example file
-# In order for a parser to work it must be able to parse this file 
-
-?Test {
-  @Port = 8080
-  
-  ?OtherTable {
-    @Port = 5959
-  }
-}
-```
-
-## Example with the C++ parser/API
-See the ```example.cpp``` file
-
-## Characters
-
-## ```#```
-Comment
-
-## ```?```
-Create table
-
-## ```@```
-Insert key/value pair into current table
+## Features
+* Objects
+* Ints, Floats, Doubles, Strings, Booleans, and Arrays
+* Easy to read
+* Schema support
+* Construct in code
