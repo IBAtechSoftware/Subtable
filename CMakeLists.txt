@@ -4,4 +4,4 @@ project(Subtable)
 
 include_directories("include")
 
-add_library(subtable src/subtable.cpp)
+add_library(subtable SHARED src/subtable.cpp)
