@@ -51,13 +51,7 @@ public:
   inline bool getBoolean(std::string key) {
     std::string stringResult = m_values.at(key);
 
-    std::transform(stringResult.begin(), stringResult.end(),
-                   stringResult.begin(), ::tolower);
-    std::istringstream is(stringResult);
-    bool b;
-    is >> std::boolalpha >> b;
-
-    return b;
+    return stringResult == "true" || stringResult == "1" ? true : false;
   }
 
   /**
